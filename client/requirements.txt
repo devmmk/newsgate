@@ -1,0 +1,4 @@
+dnspython
+fastapi
+uvicorn
+PyYAML

@@ -1,0 +1,12 @@
+services:
+  server:
+    build: .
+    command: ["python", "server.py"]
+    ports:
+      - "5353:5353/udp"
+      - "5353:5353/tcp"
+    volumes:
+      - ./config.yaml:/app/config.yaml
+      - ./sessions:/app/sessions
+      - ./data:/app/data
+    restart: unless-stopped

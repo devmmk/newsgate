@@ -1,0 +1,30 @@
+server:
+  mode: "cloudflare"
+  update_interval_sec: 60
+  max_messages: 40
+  max_txt_len: 1800
+  send_media: false
+  session_name: "newsgate"
+  log_level: "INFO"
+  telegram:
+    api_id: 0
+    api_hash: ""
+    phone: ""
+    source_channels:
+      - "@your_channel"
+  cloudflare:
+    api_token: ""
+    zone_id: ""
+    record_name: "news.example.com"
+    record_id: null
+    ttl: 120
+    proxied: false
+    extra_records: 0
+  authoritative_dns:
+    domain: "example.com"
+    host: "0.0.0.0"
+    port: 5353
+    ttl: 30
+    ns_host: "ns1.example.com"
+    soa_email: "hostmaster.example.com"
+    tcp: true

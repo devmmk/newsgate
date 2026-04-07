@@ -1,0 +1,16 @@
+client:
+  update_interval_sec: 30
+  dns_name: "n.mkaaf.ir"
+  extra_records: 10
+  resolvers_file: "resolvers.txt"
+  ok_resolvers_file: "data/ok_resolvers.txt"
+  data_file: "data/messages.sqlite3"
+  timeout_sec: 2.0
+  max_parallel: 25
+  log_level: "INFO"
+  api:
+    enabled: true
+    host: "0.0.0.0"
+    port: 8000
+    path: "/news"
+    allow_cors: false
